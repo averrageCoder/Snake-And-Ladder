@@ -20,7 +20,8 @@ public class SnakeAndLadder {
 			case 1:
 				System.out.println("HURRAY! - LADDER!");
 				pos+=dice;
-				
+				if(pos>100)
+					pos-=dice;
 				break;
 				
 			case 2:
@@ -36,7 +37,8 @@ public class SnakeAndLadder {
 			
 		}
 		
-
+		System.out.println("WINNER!");
+		
 	}
 
 }
