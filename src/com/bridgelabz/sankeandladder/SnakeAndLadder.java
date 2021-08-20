@@ -6,7 +6,7 @@ public class SnakeAndLadder {
 		
 		int pos = 0;
 		
-		while(pos<=100) {
+		while(pos<100) {
 			
 			int dice = (int) Math.floor(Math.random()*100)%6+1;
 			int option = (int) Math.floor(Math.random()*100)%3;
