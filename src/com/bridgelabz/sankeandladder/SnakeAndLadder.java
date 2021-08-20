@@ -5,10 +5,12 @@ public class SnakeAndLadder {
 	public static void main(String[] args) {
 		
 		int pos = 0;
+		int total_dice_rolls = 0;
 		
-		while(pos<=100) {
+		while(pos<100) {
 			
 			int dice = (int) Math.floor(Math.random()*100)%6+1;
+			total_dice_rolls++;
 			int option = (int) Math.floor(Math.random()*100)%3;
 			
 			switch(option) {
@@ -34,10 +36,12 @@ public class SnakeAndLadder {
 			}
 			System.out.println("Dice Rolled : "+dice);
 			System.out.println("Current Position : "+pos);
+			System.out.println(total_dice_rolls+"th DICE ROLL...");
 			
 		}
 		
 		System.out.println("WINNER!");
+		System.out.println(" TOOK "+total_dice_rolls+" DICE ROLLS TO WIN!");
 		
 	}
 
